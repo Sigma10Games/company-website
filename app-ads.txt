@@ -1,4 +1,4 @@
-fyber.com,INSERT PUBLISHER ID,DIRECT
+fyber.com,232790,DIRECT
 acd.op.hicloud.com,PUB_HW_1003,RESELLER
 adelement.com,48222,RESELLER
 adform.com,2688,RESELLER,9f5210a2f0999e32
