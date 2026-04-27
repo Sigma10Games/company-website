@@ -1,6 +1,23 @@
 // Sigma10 Games Website Scripts
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Smart Download Buttons — detect OS and link to the right store
+    const ua = navigator.userAgent || navigator.vendor || window.opera;
+    const isIOS = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
+    const isAndroid = /android/i.test(ua);
+
+    document.querySelectorAll('.smart-download').forEach(btn => {
+        if (isIOS) {
+            btn.href = btn.dataset.ios;
+            btn.target = '_blank';
+        } else if (isAndroid) {
+            btn.href = btn.dataset.android;
+            btn.target = '_blank';
+        }
+        // Desktop: keeps href pointing to the redirect page (shows both options)
+    });
+
+
     // Mobile Menu Toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');

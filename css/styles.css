@@ -472,25 +472,20 @@ section {
     transition: var(--transition);
 }
 
-.store-btn.google-play {
-    background: var(--dark);
+.store-btn.smart-download {
+    background: linear-gradient(135deg, var(--primary), var(--purple));
     color: var(--white);
+    width: 100%;
+    justify-content: center;
+    padding: 14px 24px;
+    font-size: 1rem;
+    border-radius: var(--radius-full);
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.35);
 }
 
-.store-btn.google-play:hover {
-    background: #1a1a1a;
-    transform: translateY(-2px);
-}
-
-.store-btn.app-store {
-    background: var(--bg-light);
-    color: var(--dark);
-    border: 2px solid var(--light-gray);
-}
-
-.store-btn.app-store:hover {
-    border-color: var(--dark);
-    transform: translateY(-2px);
+.store-btn.smart-download:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.5);
 }
 
 /* ===== About Section ===== */
